@@ -1,3 +1,4 @@
+//Дана строка. Вернуть изменённую строку с отображёнными гласными, т.е.  'Hello all!' - >  'Hallo ell!' (edited)
 function revertVowels(str) {
     let letters = 'aeuio';
     let arr = str.split('');
