@@ -4,12 +4,12 @@
 
 function substringCompare(str) {
     let arr = str.split('');
-    let sum1 = arr[0] + arr[1] + arr[2];
-    let sum2 = arr[arr.length - 1] + arr[arr.length - 2] + arr[arr.length - 3];
+    let sum1 = Math.floor(arr[0]) + Math.floor(arr[1]) + Math.floor(arr[2]);
+    let sum2 = Number(arr[arr.length - 1]) + Number(arr[arr.length - 2]) + Number(arr[arr.length - 3]);
     return (sum1 === sum2);
 }
 
-console.log(substringCompare('123456123'));
+console.log(substringCompare('123456128'));
 
 /* Given a1= ['a',2,'c',5,'d']; a2=['n',3,4]; compute the sum of digits  a1 and a2 */
 

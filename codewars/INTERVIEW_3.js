@@ -3,7 +3,7 @@
 function minMax(arr) {
     let min = arr[0];
     let max = arr[0];
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 1; i < arr.length; i++) {
         if (arr[i] < min) {
             min = arr[i];
         }
@@ -14,4 +14,4 @@ function minMax(arr) {
     return [min,max];
 }
 
-console.log(minMax([10, 2, 8, 10, 6, 10, 8, 95]));
+console.log(minMax([10, 2, 8, 10, 6, 10, 8, -95]));
